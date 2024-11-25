@@ -1,71 +1,75 @@
 /* Global Styles */
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-padding-bottom: 60px; /* To ensure footer does not overlap content */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 60px; /* To ensure footer does not overlap content */
 }
 
 main {
-padding: 20px;
-text-align: center;
+    padding: 20px;
+    text-align: center;
 }
 /* Footer Styles */
 .footer {
-position: fixed;
-bottom: 0;
-width: 100%;
-background-color: #007bcf; /* Warna biru khas seperti pada gambar */
-display: none; /* Hide by default */
-justify-content: space-around;
-padding: 10px 0;
-box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #007bcf; /* Warna biru khas seperti pada gambar */
+    display: none; /* Hide by default */
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .footer-menu {
-display: flex;
-width: 100%;
-justify-content: space-evenly;
-position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    position: relative;
 }
 
 
 .menu-item {
-text-align: center;
-text-decoration: none;
-color: #ffffff;
-font-size: 12px;
-position: relative;
+    display: flex; /* Aktifkan Flexbox */
+    flex-direction: column; /* Atur agar elemen diatur secara vertikal */
+    align-items: center; /* Rata tengah elemen */
+    text-align: center; /* Pastikan teks juga rata tengah */
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: #ffffff;
+    font-size: 12px;
+    position: relative;
 }
 
 .menu-item i {
-font-size: 24px; /* Ikon lebih besar */
+    font-size: 24px; /* Ukuran ikon lebih besar */
+    margin-bottom: 5px; /* Jarak antara ikon dan teks */
 }
 
 /* Garis pemisah */
 .menu-item:not(:last-child)::after {
-content: "";
-position: absolute;
-top: 10%;
-right: 0;
-height: 80%;
-width: 1px;
-background-color: #ffffff; /* Warna garis */
-opacity: 0.5; /* Transparansi */
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 80%;
+    width: 1px;
+    background-color: #ffffff; /* Warna garis */
+    opacity: 0.5; /* Transparansi */
 }
 
 .menu-item:hover {
-color: #ffdd00; /* Warna kuning pada hover */
+    color: #ffdd00; /* Warna kuning pada hover */
 }
 
 /* Show footer only on mobile */
 @media (max-width: 768px) {
-.footer {
-    display: flex;
-}
+    .footer {
+        display: flex;
+    }
 }
   
