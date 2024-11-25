@@ -1,0 +1,51 @@
+/* Footer Styles */
+.footer {
+position: fixed;
+bottom: 0;
+width: 100%;
+background-color: #007bcf; /* Warna biru khas seperti pada gambar */
+display: none; /* Hide by default */
+justify-content: space-around;
+padding: 10px 0;
+box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+}
+
+.footer-menu {
+display: flex;
+width: 100%;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.menu-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-decoration: none;
+color: #ffffff; /* Warna putih untuk teks dan ikon */
+font-size: 12px;
+transition: color 0.3s;
+}
+
+.menu-item i {
+font-size: 24px; /* Ikon lebih besar */
+margin-bottom: 5px;
+}
+
+.menu-item span {
+font-size: 10px; /* Ukuran teks lebih kecil */
+text-align: center;
+}
+
+.menu-item:hover {
+color: #ffdd00; /* Warna kuning pada hover */
+}
+
+/* Show footer only on mobile */
+@media (max-width: 768px) {
+.footer {
+    display: flex;
+}
+}
+  
