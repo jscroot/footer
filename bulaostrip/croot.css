@@ -35,12 +35,13 @@ main {
 
 
 .menu-item {
-    display: flex; /* Aktifkan Flexbox */
-    flex-direction: column; /* Atur agar elemen diatur secara vertikal */
-    align-items: center; /* Rata tengah elemen */
-    text-align: center; /* Pastikan teks juga rata tengah */
+    flex: 1; /* Setiap menu-item memiliki lebar yang sama */
+    display: flex; /* Gunakan Flexbox untuk tata letak vertikal */
+    flex-direction: column; /* Ikon dan teks ditampilkan secara vertikal */
+    align-items: center; /* Pusatkan ikon dan teks secara horizontal */
+    text-align: center; /* Rata tengah teks */
     text-decoration: none; /* Hilangkan garis bawah */
-    color: #ffffff;
+    color: #ffffff; /* Warna teks putih */
     font-size: 12px;
     position: relative;
 }
@@ -62,9 +63,11 @@ main {
     opacity: 0.5; /* Transparansi */
 }
 
+/* Hover effect */
 .menu-item:hover {
     color: #ffdd00; /* Warna kuning pada hover */
-}
+  }
+  
 
 /* Show footer only on mobile */
 @media (max-width: 768px) {
