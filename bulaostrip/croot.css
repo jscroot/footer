@@ -46,11 +46,6 @@ position: relative;
 font-size: 24px; /* Ikon lebih besar */
 }
 
-.menu-item span {
-font-size: 10px; /* Ukuran teks lebih kecil */
-text-align: center;
-}
-
 /* Garis pemisah */
 .menu-item:not(:last-child)::after {
 content: "";
