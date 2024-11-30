@@ -1,0 +1,73 @@
+body {
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+.dana-footer {
+    background-color: #ffffff; 
+    border-top: 1px solid #e0e0e0; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    display: none; /* Hanya muncul di layar mobile */
+    justify-content: space-around; 
+    padding: 5px 0; /* Kurangi padding atas dan bawah */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.footer-menu {
+    display: flex; 
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+.menu-item {
+    text-align: center; 
+    flex: 1;
+}
+
+.menu-icon {
+    width: 20px; /* Kurangi ukuran ikon */
+    height: 20px; 
+    margin-bottom: 3px; /* Kurangi jarak antara ikon dan teks */
+}
+
+.main-menu .main-button {
+    background-color: #007bff; 
+    border-radius: 50%; 
+    padding: 8px; /* Kurangi padding tombol utama */
+    width: 45px; /* Kurangi lebar tombol utama */
+    height: 45px; /* Kurangi tinggi tombol utama */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-5px); /* Sesuaikan dengan ukuran baru */
+}
+
+.main-menu .pay-icon {
+    width: 25px; /* Sesuaikan ukuran ikon dalam tombol utama */
+    height: 25px;
+}
+
+.main-menu .pay-text {
+    font-size: 10px; /* Sesuaikan ukuran teks */
+}
+
+p {
+    font-size: 10px; /* Kurangi ukuran teks pada footer */
+    color: #444; 
+    margin: 0;
+}
+
+
+/* Media Query: Menampilkan footer hanya pada layar mobile */
+@media screen and (max-width: 768px) {
+    .dana-footer {
+        display: flex; 
+    }
+}
